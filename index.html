@@ -6,19 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.css" defer></script>
+    <script src="script.js" defer></script>
     <title>To-DO List</title>
 </head>
 
 <body>
     <div class="main">
         <div class="header">
-
-            <input type="text" name="input" id="#input">
-            <div class="Add">+</div>
+            <input type="text" name="input" class="input" required>
+            <div class="Add" onclick="addItem()">+</div>
         </div>
-        <div class="content">
-
+        <div id="content">
+            <div class="listItem">
+                <p onClick="txtClicked(this)">Item One</p>
+                <button onclick="removeItem(this)">Delete</button>
+            </div>
+            <list-item>
+                abcg
+            </list-item>
         </div>
     </div>
 
